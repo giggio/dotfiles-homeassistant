@@ -30,4 +30,5 @@
     ~/.vimrc: home/.vimrc
     ~/.config/starship.toml: config/starship.toml
     ~/.ssh/config: ssh/config
+    ~/.ssh/known_hosts: /data/giggio/.ssh/known_hosts
 
