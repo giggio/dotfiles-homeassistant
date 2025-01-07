@@ -38,6 +38,25 @@ git clone --recurse-submodules https://github.com/giggio/dotfiles $HOME/.dotfile
 
 (to update run `~/.dotfiles/install --update`)
 
+## Packages
+
+These packages are necessary in Home Assistant config:
+
+* delta
+* gpg
+* gpgconf
+* bat
+* nodejs
+* npm
+* eza
+* zoxide
+* starship
+* fzf
+
+And I also use (not necessary for this repo):
+
+* kitty-terminfo
+
 ## Cleaning up before installing
 
 Remove all directories that will be replaced by the submodules.

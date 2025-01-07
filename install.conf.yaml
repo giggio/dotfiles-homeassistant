@@ -18,6 +18,7 @@
     - [git submodule update --init --recursive, Installing submodules]
 - link:
     ~/.bashrc: home/.bashrc
+    ~/.profile: home/.profile
     ~/.dotfiles:
       path: ""
       if: '[ `pwd` != "$HOME/.dotfiles" ]'
