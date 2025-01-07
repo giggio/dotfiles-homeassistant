@@ -16,27 +16,15 @@ there will be no prompt.
 If you are the repo owner make sure the SSH keys are correct, as some submodules
 use SSH, and clone with SSH.
 
-Add this to the Home Assistant startup script:
+Add these commands to the Home Assistant startup script (init_commands):
 
 ````bash
+mkdir -p /data/giggio
+chown giggio:giggio /data/giggio
 curl -fsSL https://raw.githubusercontent.com/giggio/dotfiles-homeassistant/refs/heads/main/remote_install.sh | sudo -u giggio bash
 ````
 
-Or, manually (this will be overwriten when the Home Assistant container is rebuilt):
-
-````bash
-git clone --recurse-submodules git@github.com:giggio/dotfiles.git $HOME/.dotfiles
-````
-
-If you are not the repo owner then you need to use https:
-
-````bash
-git clone --recurse-submodules https://github.com/giggio/dotfiles $HOME/.dotfiles
-````
-
-* Run the install script `~/.dotfiles/install`.
-
-(to update run `~/.dotfiles/install --update`)
+This will setup de data directory (persisted between rebuilds) and symlinks and run the install scripts.
 
 ## Packages
 

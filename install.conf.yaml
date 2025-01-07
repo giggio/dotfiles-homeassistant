@@ -17,6 +17,8 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 - link:
+    ~/.npm: /data/giggio/.npm
+    ~/.config: /data/giggio/.config
     ~/.bashrc: home/.bashrc
     ~/.profile: home/.profile
     ~/.dotfiles:
