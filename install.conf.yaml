@@ -14,8 +14,12 @@
 - create:
     - ~/.cache
     - ~/p
+    - /data/giggio/.npm
+    - /data/giggio/.config
+    - /data/giggio/.ssh
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
+    - touch /data/giggio/.bash_history2
+    - touch /data/giggio/.ssh/known_hosts
 - link:
     ~/.npm: /data/giggio/.npm
     ~/.config: /data/giggio/.config
