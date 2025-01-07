@@ -21,6 +21,7 @@
     ~/.config: /data/giggio/.config
     ~/.bashrc: home/.bashrc
     ~/.profile: home/.profile
+    ~/.bash_history2: /data/giggio/.bash_history2
     ~/.dotfiles:
       path: ""
       if: '[ `pwd` != "$HOME/.dotfiles" ]'
