@@ -14,7 +14,15 @@ there will be no prompt.
 * Clone this repo to ~/.dotfiles
 
 If you are the repo owner make sure the SSH keys are correct, as some submodules
-use SSH, and clone with SSH:
+use SSH, and clone with SSH.
+
+Add this to the Home Assistant startup script:
+
+````bash
+curl -fsSL https://raw.githubusercontent.com/giggio/dotfiles-homeassistant/refs/heads/main/remote_install.sh | sudo -u giggio bash
+````
+
+Or, manually (this will be overwriten when the Home Assistant container is rebuilt):
 
 ````bash
 git clone --recurse-submodules git@github.com:giggio/dotfiles.git $HOME/.dotfiles
