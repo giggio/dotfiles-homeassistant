@@ -47,4 +47,6 @@
 [gpg]
 [pack]
   windowMemory = 0
+[safe]
+  directory = *
 

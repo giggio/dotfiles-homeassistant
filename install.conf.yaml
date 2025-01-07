@@ -25,4 +25,5 @@
     ~/.vim: vimfiles
     ~/.vimrc: home/.vimrc
     ~/.config/starship.toml: config/starship.toml
+    ~/.ssh/config: ssh/config
 
