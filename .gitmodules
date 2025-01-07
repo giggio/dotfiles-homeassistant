@@ -1,0 +1,9 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot.git
+[submodule "vimfiles"]
+	path = vimfiles
+	url = ../vimfiles.git
+[submodule "bashscripts"]
+	path = bashscripts
+	url = ../bashscripts.git
