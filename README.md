@@ -7,7 +7,7 @@ to automate it.
 ## Installation
 
 *Note:* Some files and directories from the home directory will be removed. Check the
-[install.conf.yaml](https://github.com/giggio/dotfiles/blob/master/install.conf.yaml)
+[install.conf.yaml](install.conf.yaml)
 file, on the `shell` section to see which ones and make sure you are ok with it,
 there will be no prompt.
 
@@ -21,7 +21,7 @@ Add these commands to the Home Assistant startup script (init_commands):
 ````bash
 mkdir -p /data/giggio
 chown giggio:giggio /data/giggio
-curl -fsSL https://raw.githubusercontent.com/giggio/dotfiles-homeassistant/refs/heads/main/remote_install.sh | sudo -u giggio bash
+curl -fsSL https://raw.githubusercontent.com/giggio/dotfiles-homeassistant/refs/heads/main/remote_install.sh | bash
 ````
 
 This will setup de data directory (persisted between rebuilds) and symlinks and run the install scripts.
@@ -53,7 +53,7 @@ Remove all directories that will be replaced by the submodules.
 
 You will need to take into consideration that this project uses submodules by
 the same author, so you will need to fork those repositories first.
-To learn which repositories are being used open at the [.gitmodules]() files and
+To learn which repositories are being used open at the [.gitmodules](.gitmodules) files and
 look for relative submodules (that start with `..`).
 
 ## Author
